@@ -5,6 +5,13 @@
 <head>
 
 	<style type= "text/css">
+		table{
+/*			border:1px solid pink;*/
+		}
+		td {
+/*			border:1px solid pink;*/
+			text-align:center;
+		}
 
 			#background{
 				width:2000px;
@@ -20,7 +27,7 @@
 					font-family: 'Libre Baskerville';
 						sans-serif;
 					font-size:40px;
-					color:white;
+					color:black;
 				}
 
 				
@@ -32,63 +39,125 @@
 		position:relative;
 	}
 
-	#home
-	{
-		left:200px;top:10px;
-	}
+	
+#italy{
+	width:300px;
+	height:300px;
+	background-image:url(italy.jpg);
+	background-size:contain;
+    background-repeat:no-repeat;
+/*	display:inline-block;*/
+	position:relative;
+	left:-70px;
+	background-position:center;
+}
+#paris{
+	width:300px;
+	height:300px;
+	background-image:url(paris.jpg);
+	background-size:contain;
+    background-repeat:no-repeat;
+	display:inline-block;
+	background-position:center;
+}
 
-	#projects
-	{
-		left:600px;top:-69px;
-	}
+#greece{
+	width:300px;
+	height:300px;
+	background-image:url(greece.jpg);
+	background-size:contain;
+    background-repeat:no-repeat;
+/*	display:inline-block;*/
+	position:relative;
+	left:70px;
+	background-position:center;
+}
+
+#journal{
+	position:relative;
+	left:65px;
+}
+
+#aboutme{
+	position:relative;
+	left:-65px;
+}
 
 
-	#journal
-	{
-		left:1000px;top:-149px;
-	}
+
 
 	</style>
 </head>
 
 <body>
 	
-<div class="link" id="home">
-	<a href="index.html">
-	<h1> home ☀️ </h1>  
-</a>
-</div>
-
-
-<div class="link" id="projects">
-
-	<a href="projects.html">
-<h1> projects 🍁</h1>  
-
-</a>
-</div>
-
-
-<div class="link" id="journal">
-
-
-<a href="journal.html">
-	  
-<h1> journal ❄️</h1>  
-
-
-</a>
-
-</div>
-
-
-	
-<h1>  hi welcome to my home page
+<center>
+	<h1>  welcome to my home page!
 
 </h1>
+	<table>
+		<tr>
 
 
-<img src="https://i.pinimg.com/474x/01/d8/2a/01d82aea000818200b01abdd41a7ed91.jpg" alt="italy" style="width:300px;height:400px;">
+	<td>
+
+
+<a href="aboutme.html">
+<div id="italy"> </div>
+	
+
+</a>
+
+
+</td>
+<td>
+
+<a href="projects.html">
+
+<div id="paris"></div>
+</a>
+
+</td>
+<td>
+
+<a href="journal.html">
+<div id="greece"></div>
+
+
+</a>
+</td>
+
+</tr>
+
+<tr>
+	
+	<td>
+		<p id= "aboutme">
+			ABOUT ME 💗
+		</p>
+
+
+
+	</td>
+	<td>
+		<p id="projects">
+		PROJECTS ☕️
+	</p>
+</td>
+<td>
+	<p id="journal">
+		JOURNAL 🧿
+	</p>
+	</td>
+	</tr>
+	
+	</table>
+
+	
+
+</center>
+
+
 
 
 
