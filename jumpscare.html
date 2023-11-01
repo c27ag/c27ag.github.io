@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+
+
+<style type="text/css">
+
+body{
+background-color:white;
+}
+
+#puppies{
+	width:700px;
+	height:700px;
+	background-image:url(https://akc.org/wp-content/uploads/2015/04/Golden-Retriever-Five-Puppies.jpg);
+	background-size:contain;
+	background-position:center;
+	background-repeat: no-repeat;
+	opacity:1;
+	
+}
+#scary{
+	position:absolute;
+	top:0%;
+	width:100%;
+	height:100vh;
+	background-image:url(https://i.cbc.ca/1.4791019.1551489467!/fileImage/httpImage/momo.jpg);
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+	opacity:0;
+	
+}
+
+@keyframes turn{
+
+0%{
+transform:rotate(0deg);
+}
+
+
+100%{
+transform:rotate(60deg);
+}
+}
+</style>
+
+
+</head>
+
+
+<body>
+	<h1> click on the puppies to see them play! </h1>
+	<div id= "puppies"></div>
+	<div id="scary"></div>
+	<audio id="scaryscream" src="scaryscream.mp3"></audio>
+	
+<script type="text/javascript">
+document.addEventListener("click", function(){
+	scary.style.opacity = "1"
+	puppies.style.opacity = "0"
+	scaryscream.play()
+
+})
+
+
+</script>
+
+
+</body>
+</html>

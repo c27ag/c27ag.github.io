@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#dog{
+			width:400px;
+			height:200px;
+			background-image:url(https://i.pinimg.com/474x/6a/29/46/6a2946b796c43f2d7187c43789ccfaf8.jpg);
+			background-size:contain;
+			background-repeat:no-repeat;
+			position:absolute;
+			left:500px;
+			right:500px;
+		}
+	
+	</style>
+
+</head>
+
+<body>
+		<div id="dog"></div>
+		<script type="text/javascript">
+		document.addEventListener("mousemove",function(event){
+			dog.style.left= event.clientX -100+ "px";
+			dog.style.top= event.clientY -100+ "px";
+			console.log(event.clientX, event.clientY)
+
+			})
+</script>
+
+</body>
+</html>

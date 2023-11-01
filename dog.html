@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		#dog{
+			width:400px;
+			height:200px;
+			background-image:url(cutdog.png);
+			background-size:contain;
+			background-repeat:no-repeat;
+			position:absolute;
+			left:500px;
+			right:500px;
+		}
+
+		#blond{
+			width:400px;
+			height:200px;
+			background-image:url(https://upload.wikimedia.org/wikipedia/en/a/a0/Blonde_-_Frank_Ocean.jpeg);
+			background-size:contain;
+			background-repeat:no-repeat;
+			position:absolute;
+			left:100px;
+			top:400px;
+		}
+
+		#sos{
+			width:400px;
+			height:200px;
+			background-image:url(https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/SZA_-_S.O.S.png/220px-SZA_-_S.O.S.png);
+			background-size:contain;
+			background-repeat:no-repeat;
+			position:absolute;
+			left:100px;
+			top:100px;
+		}
+		#starboy{
+			width:400px;
+			height:200px;
+			background-image:url(https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png);
+			background-size:contain;
+			background-repeat:no-repeat;
+			position:absolute;
+			left:1000px;
+			top:100px;
+		}
+	#forallthedogs{
+			width:400px;
+			height:200px;
+			background-image:url(https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Drake_-_For_All_The_Dogs.png/220px-Drake_-_For_All_The_Dogs.png);
+			background-size:contain;
+			background-repeat:no-repeat;
+			position:absolute;
+			left:1000px;
+			top:400px;
+		}
+	
+	</style>
+
+</head>
+
+<body>
+	
+		<div id = "blond"></div>
+		<div id="sos"></div>
+		<div id="starboy"></div>
+		<div id="forallthedogs"></div>
+		<div id="dog"></div>
+
+		<script type="text/javascript">
+		document.addEventListener("mousemove",function(event){
+			dog.style.left= event.clientX -100+ "px";
+			dog.style.top= event.clientY -100+ "px";
+			console.log(event.clientX, event.clientY)
+
+			})
+
+</script>
+<h1> pick the album the dog wants to listen to
+	</h1>
+</body>
+</html>
