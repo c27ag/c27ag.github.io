@@ -4,10 +4,10 @@
 	<title></title>
 
 	<style type="text/css">
-		#dog{
+		#cutedog{
 			width:400px;
 			height:200px;
-			background-image:url(cutdog.png);
+			background-image:url(cutedog.png);
 			background-size:contain;
 			background-repeat:no-repeat;
 			position:absolute;
@@ -67,12 +67,13 @@
 		<div id="sos"></div>
 		<div id="starboy"></div>
 		<div id="forallthedogs"></div>
-		<div id="dog"></div>
+		<div id="cutedog"></div>
 
 		<script type="text/javascript">
+			var cutedog = document.getElementById("cutedog");
 		document.addEventListener("mousemove",function(event){
-			dog.style.left= event.clientX -100+ "px";
-			dog.style.top= event.clientY -100+ "px";
+			cutedog.style.left= event.clientX -100+ "px";
+			cutedog.style.top= event.clientY -100+ "px";
 			console.log(event.clientX, event.clientY)
 
 			})
