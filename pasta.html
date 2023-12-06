@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasta 2048</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    #board {
+      display: grid;
+      grid-template-columns: repeat(4, 100px);
+      grid-gap: 10px;
+      background-color: #bbada0;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .tile {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      border: 2px solid #776e65;
+      border-radius: 4px;
+      background-color: #eee4da;
+    }
+
+    .tile span {
+      display: block;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="board"></div>
+
+  <script>
+    const board = document.getElementById('board');
+    const pastaTypes = ['🍝', '🍜', '🍲', '🍝', '🍜', '🍲', '🍝', '🍜', '🍲'];
+
+    // Initialize the game board
+    let gameBoard = Array.from({ length: 4 }, () => Array(4).fill(0));
+
+    // Add a random tile to the board
+    function addRandomTile() {
+      const emptyCells = [];
+
+      gameBoard.forEach((row, rowIndex) => {
+        row.forEach((cell, colIndex) => {
+          if (cell === 0) {
+            emptyCells.push({ rowIndex, colIndex });
+          }
+        });
+      });
+
+      if (emptyCells.length > 0) {
+        const { rowIndex, colIndex } = emptyCells[Math.floor(Math.random() * emptyCells.length)];
+        gameBoard[rowIndex][colIndex] = pastaTypes[Math.floor(Math.random() * pastaTypes.length)];
+      }
+    }
+
+    // Render the board
+    function renderBoard() {
+      board.innerHTML = '';
+
+      gameBoard.forEach((row, rowIndex) => {
+        row.forEach((cell, colIndex) => {
+          const tile = document.createElement('div');
+          tile.className = 'tile';
+          tile.innerHTML = `<span>${cell}</span>`;
+          board.appendChild(tile);
+        });
+      });
+    }
+
+    // Initialize the game
+    function initGame() {
+      addRandomTile();
+      addRandomTile();
+      renderBoard();
+    }
+
+    // Handle key presses
+    window.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowUp') {
+        // Implement move up logic
+      } else if (event.key === 'ArrowDown') {
+        // Implement move down logic
+      } else if (event.key === 'ArrowLeft') {
+        // Implement move left logic
+      } else if (event.key === 'ArrowRight') {
+        // Implement move right logic
+      }
+
+      // Update the board and check for a win or game over
+      renderBoard();
+      // Check for win/game over
+    });
+
+    // Initialize the game
+    initGame();
+  </script>
+
+</body>
+</html>

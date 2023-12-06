@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type= "text/css">
+		.eq{
+			width:100px;
+			height:100px;
+			background-image:url(https://instorestatic.tcl.com/media/catalog/product/s/5/s53_front-1_3.png);
+			background-size:contain;
+			background-repeat:no-repeat;
+			display:inline-block;
+
+		}
+
+		h3{
+					font-family: 'Libre Baskerville';
+					sans-serif;
+					font-size:15px;
+					color:lightblue;
+
+				}
+
+		a{
+			text-decoration:none;
+		}
+	</style>
+
+
+</head>
+<body>
+
+	<center> <h1> number of minutes i watch tv per week </h1> </center>
+
+	<a href="tvshows.html">
+	<center> <h3> here are the shows i've watched throughout the year </h3>
+</a> </center>
+
+<script type="text/javascript"> 
+
+	function makeEQ (input){
+		var eq = document.createElement("div")
+		document.body.appendChild(eq);
+		eq.classList.add ("eq");
+		eq.innerText = input
+
+	}
+	
+	for (var counter = 0; counter<986; counter=counter+2){
+		makeEQ(counter)
+	}
+
+
+	</script>
+
+	<center> <h2> that's 16.4 hours every week!</h2> </center>
+</body>
+</html>
