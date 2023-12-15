@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	<h1> make a taco! </h1>
+	<p> click on the topping you want, and then click on the shell to place it! </p>
+	<style type="text/css">
+			.tacos{
+				
+				width: 200px;
+				height: 200px:;
+				background-repeat: no-repeat;
+				background-size:contain;
+				display:inline-block;
+				background-repeat: no-repeat;
+
+
+
+			}
+			#taco{
+				
+				width: 500px;
+				height: 500px;
+				background-image:url(tortilla.png);
+				background-repeat: no-repeat;
+				background-size:contain;
+
+
+
+			}
+
+			#beef{
+				width:200px;
+				height:200px;
+				background-image:url(beef.png);
+				background-repeat: no-repeat;
+				background-size:contain;
+
+			}
+
+			#lettuce{
+				width:200px;
+				height:200px;
+				
+				background-image:url(lettuce.png);
+				background-repeat: no-repeat;
+				background-size:contain;
+
+			}
+
+			#tomato{
+				width:200px;
+				height:200px;
+			
+				background-image:url(tomato.png);
+				background-repeat: no-repeat;
+				background-size:contain;
+
+		
+
+			}
+			#cheese{
+				width:200px;
+				height:200px;
+				
+				background-image:url(cheese.png);
+				background-repeat: no-repeat;
+				background-size:contain;
+				top:30px;
+
+			}
+
+			#sourcream{
+				width:200px;
+				height:200px;
+				
+				background-image:url(sourcream.png);
+				background-repeat: no-repeat;
+				background-size:contain;
+
+			}
+
+			#guac{
+				width:200px;
+				height:200px;
+		
+				background-image:url(guac.png);
+				background-repeat: no-repeat;
+				background-size:contain;
+
+			}
+			
+
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+<div id="beef" class="tacos"></div>
+<div id ="lettuce" class="tacos"></div>
+<div id ="tomato" class="tacos"></div>
+	<div id ="cheese" class="tacos"></div>
+	<div id ="sourcream" class="tacos"></div>
+	<div id ="guac" class="tacos"></div>
+	<center><div id="taco" ></div></center>
+
+	<script type="text/javascript">
+
+var image="blah";
+
+
+beef.addEventListener("click",function(){
+			image="beef"
+			console.log("beef")
+		
+		})
+		lettuce.addEventListener("click",function(){
+			image="lettuce"
+			console.log("lettuce")
+		
+		})
+		tomato.addEventListener("click",function(){
+			image="tomato"
+			console.log("tomato")
+		
+		})
+
+		cheese.addEventListener("click",function(){
+			image="cheese"
+			console.log("cheese")
+		
+		})
+
+		sourcream.addEventListener("click",function(){
+			image="sourcream"
+			console.log("sourcream")
+		
+		})
+
+		guac.addEventListener("click",function(){
+			image="guac"
+			console.log("guac")
+		
+		})
+
+	
+		taco.addEventListener("click", function stuffTaco() {
+
+		var whatever=document.createElement('div');
+		document.body.appendChild(whatever)
+		whatever.style.height = "200px"
+		whatever.style.width = "200px"
+		whatever.style.backgroundSize = "200px"
+		whatever.style.backgroundRepeat = "no-repeat"
+
+		whatever.style.backgroundImage = "url("+image +".png)"
+		//whatever.style.backgroundColor= "blue"
+
+		console.log (event)
+		whatever.style.left=event.clientX + "px"
+		whatever.style.top=event.clientY + "px"
+		whatever.style.position="absolute"
+
+
+
+
+				// taco.style.backgroundImage = image
+
+
+	})
+
+
+		
+		
+
+
+
+	</script>
+
+
+</body>
+</html>
