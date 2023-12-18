@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+	<h1> happy holidays zoe! i love you  </h1>
+	<p> click on little zoe and decorate the tree! </p>
+	<style type="text/css">
+			.trees{
+				
+				width: 200px;
+				height: 200px:;
+				background-repeat: no-repeat;
+				background-size:contain;
+				display:inline-block;
+				background-repeat: no-repeat;
+
+
+
+			}
+			#tree{
+				
+				width: 500px;
+				height: 500px;
+				background-image:url(whitetree.jpg);
+				background-repeat: no-repeat;
+				background-size:contain;
+
+
+
+			}
+
+			#zoe1{
+				width:200px;
+				height:200px;
+				background-image:url(zoe1.png);
+				background-repeat: no-repeat;
+				background-size:contain;
+
+			}
+
+			#zoe2{
+				width:200px;
+				height:200px;
+				
+				background-image:url(zoe2.png);
+				background-repeat: no-repeat;
+				background-size:contain;
+
+			}
+
+			#zoe3{
+				width:200px;
+				height:200px;
+			
+				background-image:url(zoe3.png);
+				background-repeat: no-repeat;
+				background-size:contain;
+
+		
+
+			}
+			#zoe4{
+				width:200px;
+				height:200px;
+				
+				background-image:url(zoe4.png);
+				background-repeat: no-repeat;
+				background-size:contain;
+				top:30px;
+
+			}
+
+			#zoe5{
+				width:200px;
+				height:200px;
+				
+				background-image:url(zoe5.png);
+				background-repeat: no-repeat;
+				background-size:contain;
+				
+
+			}
+
+			#zoe6{
+				width:200px;
+				height:200px;
+		
+				background-image:url(zoe6.png);
+				background-repeat: no-repeat;
+				background-size:contain;
+
+			}
+			
+
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+
+<div id="zoe1" class="trees"></div>
+<div id ="zoe2" class="trees"></div>
+<div id ="zoe3" class="trees"></div>
+	<div id ="zoe4" class="trees"></div>
+	<div id ="zoe5" class="trees"></div>
+	<div id ="zoe6" class="trees"></div>
+	<center><div id="tree" ></div></center>
+
+	<script type="text/javascript">
+
+var image="blah";
+
+
+	zoe1.addEventListener("click",function(){
+			image="zoe1"
+			console.log("zoe1")
+
+		
+		})
+		zoe2.addEventListener("click",function(){
+			image="zoe2"
+			console.log("zoe2")
+		
+		})
+		zoe3.addEventListener("click",function(){
+			image="zoe3"
+			console.log("zoe3")
+		
+		})
+
+		zoe4.addEventListener("click",function(){
+			image="zoe4"
+			console.log("zoe4")
+		
+		})
+
+		zoe5.addEventListener("click",function(){
+			image="zoe5"
+			console.log("zoe5")
+		
+		})
+
+		zoe6.addEventListener("click",function(){
+			image="zoe6"
+			console.log("zoe6")
+		
+		})
+
+	
+		tree.addEventListener("click", function decoZoe() {
+
+		var whatever=document.createElement('div');
+		document.body.appendChild(whatever)
+		whatever.style.height = "80px"
+		whatever.style.width = "80px"
+		whatever.style.borderRadius = "50%"
+		whatever.style.backgroundSize = "100px"
+		whatever.style.backgroundRepeat = "no-repeat"
+
+		whatever.style.backgroundImage = "url("+image +".png)"
+		//whatever.style.backgroundColor= "blue"
+
+		console.log (event)
+		whatever.style.left=event.clientX + "px"
+		whatever.style.top=event.clientY + "px"
+		whatever.style.position="absolute"
+
+
+
+
+				// taco.style.backgroundImage = image
+
+
+	})
+
+
+		
+		
+
+
+
+	</script>
+
+
+</body>
+</html>
