@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<center> pick a tv show to watch </center>
+	<script type= "text/javascript">
+
+		var tvshows = [
+			"one tree hill",
+			"pretty little liars",
+			"gossip girl",
+			"the good place",
+			"modern family",
+			"suits",
+			"the oc",
+			"outer banks",
+			"never have i ever",
+			"the summer i turned pretty",
+			"grey's anatomy",
+			"total drama island"
+			]
+
+			document.addEventListener("click", function(){
+		var x = Math.round (Math.random()*10);
+		console.log (x)
+
+		console.log(tvshows[x])
+
+		document.body.innerText = tvshows [x]
+			})
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
