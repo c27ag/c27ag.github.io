@@ -7,17 +7,37 @@
 	<style type= "text/css">
 		table{
 /*			border:1px solid pink;*/
+			width:90%;
 		}
 		td {
+			width:30%;
 /*			border:1px solid pink;*/
 			text-align:center;
+			background-position:center;
 		}
 
-			#background{
-				width:2000px;
-				height:2000px;
-				background-size:contain;
-				background-repeat:no-repeat;
+		p{
+			text-align: center;
+		}
+
+			body{
+			margin:0px;
+			}
+
+			div{
+				background-size:cover;
+		
+			}
+
+		#background{
+		position:absolute;
+		top:0%;
+		width:100%;
+		height:1000px;
+		background-image:url(beach.jpg);
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position:center;
 
 				}
 				
@@ -27,12 +47,20 @@
 					font-family: 'Libre Baskerville';
 						sans-serif;
 					font-size:40px;
-					color:black;
+					color:lightpink;
+				}
+
+				p{
+					font-family: 'Libre Baskerville';
+						sans-serif;
+					font-size:20px;
+					color:hotpink;
+					position:center;
 				}
 
 				
 	body{
-		background-color: lightblue;
+		background-color: lightpink;
 	}
 
 	.link{
@@ -40,48 +68,57 @@
 	}
 
 	
-#italy{
-	width:300px;
-	height:300px;
-	background-image:url(italy.jpg);
+#snorkel{
+	width:100%;
+	height:250px;
+	background-image:url(snorkel.png); 
 	background-size:contain;
     background-repeat:no-repeat;
 /*	display:inline-block;*/
-	position:relative;
-	left:-70px;
 	background-position:center;
 }
-#paris{
-	width:300px;
-	height:300px;
-	background-image:url(paris.jpg);
+#acai{
+	width:100%;
+	height:250px;
+	background-image:url(acai.png);
 	background-size:contain;
     background-repeat:no-repeat;
 	display:inline-block;
+	position:relative;
 	background-position:center;
 }
 
-#greece{
-	width:300px;
-	height:300px;
-	background-image:url(greece.jpg);
+#paddle{
+	width:100%;
+	height:250px;
+	background-image:url(paddle.png);
 	background-size:contain;
     background-repeat:no-repeat;
 /*	display:inline-block;*/
 	position:relative;
-	left:70px;
 	background-position:center;
 }
 
 #journal{
 	position:relative;
-	left:65px;
+	
 }
 
 #aboutme{
 	position:relative;
-	left:-65px;
+	
 }
+
+	#dolphin{
+		width:200px;
+		height:200px;
+		background-image: url(dolphin.png);
+		background-size:contain;
+    	background-repeat:no-repeat;
+		position:relative;
+		left:100px;
+		background-position:center;
+		}
 
 
 
@@ -90,23 +127,21 @@
 </head>
 
 <body>
+	<div id="background">
 	
 <center>
 	<h1>  welcome to my home page!
 
 </h1>
 	<table>
+		 <!-- this is a row -->
+
 		<tr>
-
-
 	<td>
-
-
 <a href="aboutme.html">
-<div id="italy"> </div>
-	
-
+<div id="snorkel"> </div>
 </a>
+
 
 
 </td>
@@ -114,46 +149,48 @@
 
 <a href="projects.html">
 
-<div id="paris"></div>
+<div id="acai"></div>
 </a>
+
 
 </td>
 <td>
 
 <a href="journal.html">
-<div id="greece"></div>
-
+<div id="paddle"></div>
 
 </a>
 </td>
-
 </tr>
 
 <tr>
+ <!-- this is a row -->
 	
 	<td>
 		<p id= "aboutme">
-			ABOUT ME 💗
+			ABOUT ME
 		</p>
 
 
 
 	</td>
+
 	<td>
 		<p id="projects">
-		PROJECTS ☕️
-	</p>
+		PROJECTS
+	</p> 
 </td>
+
 <td>
 	<p id="journal">
-		JOURNAL 🧿
+		JOURNAL
 	</p>
 	</td>
 	</tr>
 	
 	</table>
 
-	
+</div>
 
 </center>
 
@@ -161,6 +198,10 @@
 
 
 
+
+
+
 </body>
+
 
 </html>
