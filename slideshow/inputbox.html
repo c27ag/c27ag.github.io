@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	roses are red, violets are blue <br>
+	you are an anger and
+
+	<input id="word"></input> too.
+	<br>
+
+	<button id=submit>submit</button>
+
+	<script type="text/javascript">
+
+		submit.addEventListener("click", function (){
+			console.log(word.value)
+			
+
+			if(word.value == "cat"){
+				alert("omg")
+			}
+
+			else{
+				alert("you're not a " + word.value + " you're a")
+			}
+		})
+	</script>
+
+
+
+</body>
+</html>
