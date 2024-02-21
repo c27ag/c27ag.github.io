@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body {
+			background-color:rgba(150,300,500,1.0);
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		document.addEventListener("click", function (event) {
+			var x= Math.random()*255;
+			var y= Math.random()*255;
+			var z= Math.random()*255;
+			var a= 0;
+			var b= event.clientY;
+			var c= event.clientX;
+			var d= a/(window.innerWidth/255);
+
+			var e= b/(window.innerHeight/255);
+			console.log(a,b)
+			document.body.style.backgroundColor ="rgba(" + d + "," + e + "," + c + ", 1.0)";
+
+		})
+
+
+	</script>
+
+	<h1> click around for different colors! </h1>
+
+</body>
+</html>
